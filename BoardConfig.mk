@@ -204,7 +204,11 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 # Sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
-# SurfaceFlinger
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/product/lib64/libdpmframework.so|libcutils_shim.so
+
+#    SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
 
 # Treble
