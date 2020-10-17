@@ -35,7 +35,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_BOARD_PLATFORM := msm8953
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_PHONY_TARGETS := true
+#BUILD_BROKEN_PHONY_TARGETS := true
 
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
@@ -220,3 +220,5 @@ TARGET_USES_ALTERNATIVE_MANUAL_NETWORK_SELECT := true
 # Inherit from the proprietary version
 -include vendor/xiaomi/sakura/BoardConfigVendor.mk
 -include vendor/xiaomi/msm8953-common/BoardConfigVendor.mk
+
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
