@@ -206,10 +206,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     chargeonlymode
 
-# health
-PRODUCT PACKAGES += \
-   android.hardware.health@2.0-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
@@ -302,10 +298,6 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 -include device/xiaomi/sakura/prop.mk
-
-# Public Libraries
- PRODUCT_COPY_FILES += \
-$(COMMON_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
 # QMI
 PRODUCT_PACKAGES += \
