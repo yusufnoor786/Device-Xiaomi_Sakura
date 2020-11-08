@@ -410,7 +410,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
-    vndk-package
+    vndk-package \
     libgui_vendor \
     libstdc++.vendor
 
