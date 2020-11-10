@@ -192,7 +192,7 @@ TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/fstab.qcom
 
 # RIL
-#TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security Patch Level
@@ -203,7 +203,7 @@ include device/qcom/sepolicy-legacy-um/sepolicy.mk
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Sepolicy
-BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/minimal
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
 # Treble
 BOARD_VNDK_RUNTIME_DISABLE := true
