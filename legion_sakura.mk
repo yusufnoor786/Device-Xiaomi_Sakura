@@ -21,6 +21,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/sakura/device.mk)
 
+#Gapps
+WITH_GAPPS := true
+
 # Inherit from MiuiCamera
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
