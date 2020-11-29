@@ -28,11 +28,11 @@ $(call inherit-product, device/xiaomi/sakura/device.mk)
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit some common LegionOS stuff.
-$(call inherit-product, vendor/legion/config/common.mk)
+$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sakura
-PRODUCT_NAME := legion_sakura
+PRODUCT_NAME := ssos_sakura
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 6 Pro
@@ -47,9 +47,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "xiaomi/tissot/tissot_sprout:8.0.0/OPR1.170623.026/8.1.10:user/release-keys"
 
-<<<<<<< HEAD:legion_sakura.mk
 TARGET_BOOT_ANIMATION_RES := 1080
-
+TARGET_FACE_UNLOCK_SUPPORTED := true
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 
