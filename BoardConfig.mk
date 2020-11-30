@@ -205,6 +205,10 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Sepolicy
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-minimal
 
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/product/lib64/libdpmframework.so|libcutils_shim.so
+
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
 
