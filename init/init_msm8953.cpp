@@ -33,6 +33,7 @@
 #include <string.h>
 #include <sys/sysinfo.h>
 #include <unistd.h>
+#include <fmt/chrono.h>
 
 #include <android-base/properties.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
