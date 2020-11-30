@@ -97,7 +97,6 @@ void vendor_load_properties()
     check_device();
     set_avoid_gfxaccel_config();
 
-
     SetProperty("dalvik.vm.heapstartsize", heapstartsize);
     SetProperty("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     SetProperty("dalvik.vm.heapsize", heapsize);
@@ -105,16 +104,3 @@ void vendor_load_properties()
     SetProperty("dalvik.vm.heapminfree", heapminfree);
     SetProperty("dalvik.vm.heapmaxfree", heapmaxfree);
 }
-
-	// fingerprint
-	property_override("ro.build.description", "redfin-user 11 RD1A.201105.003.A1 6886512 release-keys");
-	property_override_multifp("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "ro.bootimage.build.fingerprint", "google/redfin/redfin:11/RD1A.201105.003.A1/6886512:user/release-keys");
-
-	// Magisk Hide
-	property_override("ro.boot.verifiedbootstate", "green");
-	property_override("ro.boot.vbmeta.device_state", "locked");
-	property_override("ro.boot.veritymode", "enforcing");
-	property_override("ro.build.type", "user");
-	property_override("ro.build.tags", "release-keys");
-}
-
