@@ -363,10 +363,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml \
-#    telephony-ext
-
-#PRODUCT_BOOT_JARS += \
-#    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -415,15 +411,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
 
-
-# Touch HAL
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.touch@1.0-service.xiaomi_8953
-
 # Trust HAL
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.trust@1.0-service
-#
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
 # USB HAL
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0-service.basic
