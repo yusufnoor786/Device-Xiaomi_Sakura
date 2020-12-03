@@ -1,4 +1,6 @@
 # Device Tree for Xiaomi Redmi 6 Pro (sakura)
+# Path:- Device/xiaomi/sakura
+
 
 ## Spec Sheet
 
